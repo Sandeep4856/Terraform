@@ -5,7 +5,7 @@ variable "instance_names" {
 }
 variable "image_id" {
   type        = string #optional
-  default     = "ami-041e2ea9402c46c32" #optional
+  default     = "ami-09c813fb71547fc4f" #optional
   description = "RHEL-9 AMI ID" #optional
 }
 
@@ -21,6 +21,10 @@ variable "common_tags" {
         Terraform = "true"
     }
 }
+
+
+
+# sg variables
 
 variable "sg_name" {
     default = "allow_ssh"
@@ -41,4 +45,15 @@ variable "protocol" {
 variable "allowed_cidr" {
     type = list(string)
     default = ["0.0.0.0/0"]
+}
+
+
+# r53 variables
+
+variable "zone_id" {
+    default = "Z0551502743C0MZKYM3"
+}
+
+variable "domain_name" {
+    default = "dharla.online"
 }
