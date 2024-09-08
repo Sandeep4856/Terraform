@@ -1,7 +1,7 @@
 variable "image_id" {
   description = "The AMI ID for the instance"
   type        = string
-  default     = "ami-041e2ea9402c46c32" # optional
+  default     = "ami-09c813fb71547fc4f" # optional
 }
 
 
